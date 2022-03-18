@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Horarios</title>
+    <link rel="icon"
+    href="https://smartdoctor.la/wp-content/uploads/2021/06/cropped-LOGO-SMART-DOCTOR-512X512-fondo-blanco-32x32.png"
+    sizes="32x32">
+
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/Pago.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+</head>
+<body>  
+    
+
+    
+    <section id="section-fechas">
+            <h2 class="subtitulo">HORARIOS DISPONIBLES</h2>
+            <P class="parrafo" >Estos son los horarios de nuesto especialistas</P>
+            <div class="contenedor-de-horarios">
+                <div class="horario">
+                    <img src="img/icon.png" alt="horario">
+                    <a href="https://fernandaamelitc.github.io/cobro/">7:30 PM</a>
+                    
+                </div>
+                <div class="horario">
+                    <img src="img/icon.png" alt="horario">
+                    <a href="https://fernandaamelitc.github.io/cobro/">8:00 PM</a>
+
+                </div>
+                <div class="horario">
+                    <img src="img/icon.png" alt="horario">
+                    <a href="https://fernandaamelitc.github.io/cobro/">8:50 PM</a>
+
+                </div>
+                <div class="horario">
+                    <img src="img/icon.png" alt="horario">
+                    <a href="https://fernandaamelitc.github.io/cobro/">
+                    9:00 AM</a>
+
+                </div>
+                <div class="horario">
+                    <img src="img/icon.png" alt="horario">
+                    <a href="https://fernandaamelitc.github.io/cobro/">10:30 PM</a>
+
+                </div>
+                <div class="horario">
+                    <img src="img/icon.png">
+                    <a href="https://fernandaamelitc.github.io/cobro/">2:00 PM</a>
+
+                    
+                </div>
+            </div>
+            
+    </section>
+
+
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+    <script  type="text/javascript" src="js.js"></script>
+    <script type="text/javascript">
+        let calendar = new Calendar('calendar');
+        calendar.getElement().addEventListener('change', e => {
+            console.log(calendar.value().format('LLL'));
+        });
+
+        let calendar2 = new Calendar('calendar2');
+        calendar2.getElement().addEventListener('change', e => {
+            console.log(calendar2.value().format('LLL'));
+        });
+    </script>
+</body>
+</html>
